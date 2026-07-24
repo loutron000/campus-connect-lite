@@ -209,6 +209,18 @@ section h2 {
 
 }
 
+.resource-card{
+
+    cursor:pointer;
+
+}
+
+.resource-card:hover{
+
+    border-top:4px solid #115e59;
+
+}
+
 #contact {
 
     text-align: center;
@@ -250,6 +262,96 @@ footer {
     text-align: center;
 
     padding: 30px;
+
+}
+
+/* ---------- Modal ---------- */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,.6);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 999;
+
+}
+
+.modal-content {
+
+    background: white;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    text-align: center;
+
+    animation: pop .3s ease;
+
+}
+
+#close-modal {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+#modal-title{
+
+    color:#0f766e;
+
+    margin-bottom:15px;
+
+}
+
+#modal-description{
+
+    line-height:1.7;
+
+    color:#6b7280;
+
+}
+
+@keyframes pop{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
 
 }
 

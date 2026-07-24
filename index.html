@@ -1,158 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campus Connect Lite</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
     <header>
-        <div class="logo">
-            <h1>🎓 Campus Connect Lite</h1>
-        </div>
+      <div class="logo">
+        <h1>🎓 Campus Connect Lite</h1>
+      </div>
 
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#announcements">Announcements</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#resources">Resources</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#announcements">Announcements</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <button id="theme-toggle" aria-label="Togge Dark Mode">🌙</button>
-
+      <button id="theme-toggle" aria-label="Togge Dark Mode">🌙</button>
     </header>
 
     <!-- Hero -->
     <section id="hero">
+      <h2>Connecting Students Across Campus</h2>
+      <p class="hero-subtitle">
+        Your one-stop platform for campus news, events and student resources.
+      </p>
 
-        <h2>Connecting Students Across Campus</h2>
-        <p class="hero-subtitle">
-    Your one-stop platform for campus news, events and student resources.
-</p>
+      <p>
+        Stay informed with the latest announcements, campus events, academic
+        resources and important updates—all in one place.
+      </p>
 
-        <p>
-            Stay informed with the latest announcements,
-            campus events, academic resources and important
-            updates—all in one place.
-        </p>
-
-        <button id="explore-btn">
-            Explore Campus
-        </button>
-
+      <button id="explore-btn">Explore Campus</button>
     </section>
 
     <!-- Announcements -->
     <section id="announcements">
+      <h2>Latest Announcements</h2>
 
-        <h2>Latest Announcements</h2>
-
-        <div class="announcement-container">
-
-            <div class="card">
-                <h3>Semester Examination Timetable Draft Released</h3>
-                <p>The draft of the semester examination timetable has been released. Please check the portal for details.</p>
-            </div>
-
-            <div class="card">
-                <h3>Admissions Now Open</h3>
-                <p>Applications for admission into the University of Jos are now open for eligible candidates.</p>
-            </div>
-
-            <div class="card">
-                <h3>Blood Donation Drive</h3>
-                <p>Blood Donation Campaign is ongoing. Join us in making a difference!</p>
-            </div>
-
+      <div class="announcement-container">
+        <div class="card">
+          <h3>Semester Examination Timetable Draft Released</h3>
+          <p>
+            The draft of the semester examination timetable has been released.
+            Please check the portal for details.
+          </p>
         </div>
 
+        <div class="card">
+          <h3>Admissions Now Open</h3>
+          <p>
+            Applications for admission into the University of Jos are now open
+            for eligible candidates.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Blood Donation Drive</h3>
+          <p>
+            Blood Donation Campaign is ongoing. Join us in making a difference!
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Events -->
     <section id="events">
+      <h2>Upcoming Events</h2>
 
-        <h2>Upcoming Events</h2>
-
-        <div class="event-container">
-
-            <div class="card">
-                <h3>Hackathon</h3>
-                <p>Build innovative solutions with fellow students.</p>
-            </div>
-
-            <div class="card">
-                <h3>Career Fair</h3>
-                <p>Meet employers and explore internship opportunities.</p>
-            </div>
-
-            <div class="card">
-                <h3>Sports Competition</h3>
-                <p>Represent your department and compete for trophies.</p>
-            </div>
-
+      <div class="event-container">
+        <div class="card">
+          <h3>Hackathon</h3>
+          <p>Build innovative solutions with fellow students.</p>
         </div>
 
+        <div class="card">
+          <h3>Career Fair</h3>
+          <p>Meet employers and explore internship opportunities.</p>
+        </div>
+
+        <div class="card">
+          <h3>Sports Competition</h3>
+          <p>Represent your department and compete for trophies.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Resources -->
     <section id="resources">
+      <h2>Student Resources</h2>
 
-        <h2>Student Resources</h2>
-
-        <div class="resource-container">
-
-            <div class="card">
-                <h3>Lecture Notes</h3>
-            </div>
-
-            <div class="card">
-                <h3>Past Questions</h3>
-            </div>
-
-            <div class="card">
-                <h3>Academic Calendar</h3>
-            </div>
-
-            <div class="card">
-                <h3>Student Handbook</h3>
-            </div>
-
+      <div class="resource-container">
+        <div
+          class="card resource-card"
+          data-title="Lecture Notes"
+          data-description="Browse lecture notes uploaded by lecturers across different faculties."
+        >
+          <h3>📘 Lecture Notes</h3>
         </div>
 
+        <div
+          class="card resource-card"
+          data-title="Past Questions"
+          data-description="Practice using previous examination questions from different departments."
+        >
+          <h3>📝 Past Questions</h3>
+        </div>
+
+        <div
+          class="card resource-card"
+          data-title="Academic Calendar"
+          data-description="View important academic dates, registration periods and examination schedules."
+        >
+          <h3>📅 Academic Calendar</h3>
+        </div>
+
+        <div
+          class="card resource-card"
+          data-title="Student Handbook"
+          data-description="Read university rules, regulations and student policies."
+        >
+          <h3>📖 Student Handbook</h3>
+        </div>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
+      <h2>Contact</h2>
 
-        <h2>Contact</h2>
+      <p>
+        Questions, suggestions or campus updates? We'd love to hear from you.
+      </p>
 
-        <p>
-            Questions, suggestions or campus updates?
-            We'd love to hear from you.
-        </p>
-
-        <a href="mailto:ugandelouis001@gmail.com" class="contact-btn">
-            Contact Us
-        </a>
-
+      <a href="mailto:ugandelouis001@gmail.com" class="contact-btn">
+        Contact Us
+      </a>
     </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+
+        <h2 id="modal-title"></h2>
+
+        <p id="modal-description"></p>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer>
-
-        <p>&copy; 2026 Campus Connect Lite. All Rights Reserved.</p>
-
+      <p>&copy; 2026 Campus Connect Lite. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

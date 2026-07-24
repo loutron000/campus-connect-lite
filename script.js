@@ -51,8 +51,24 @@ window.addEventListener("click", (event) => {
 
 });
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        modal.style.display = "none";
+    }
+});
+
 
 const themeToggle = document.getElementById("theme-toggle");
+
+const savedTheme = localStorage.getItem("theme");
+
+if(savedTheme === "dark"){
+
+    document.body.classList.add("dark");
+
+    themeToggle.textContent = "☀️";
+
+}
 
 themeToggle.addEventListener("click", () => {
 
@@ -62,11 +78,15 @@ themeToggle.addEventListener("click", () => {
 
         themeToggle.textContent = "☀️";
 
+        localStorage.setItem("theme","dark");
+
     }
 
     else{
 
         themeToggle.textContent = "🌙";
+
+        localStorage.setItem("theme","light");
 
     }
 

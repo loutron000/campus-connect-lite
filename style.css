@@ -13,6 +13,22 @@
     --footer:#1f2937;
 }
 
+body.dark {
+
+    --background: #111827;
+
+    --surface: #1f2937;
+
+    --text: #f9fafb;
+
+    --secondary-text: #d1d5db;
+
+    --footer: #030712;
+
+    --shadow: rgba(0,0,0,.35);
+
+}
+
 /* ---------- Reset ---------- */
 
 html {
@@ -25,6 +41,28 @@ html {
     box-sizing: border-box;
 }
 
+#theme-toggle{
+
+    background:none;
+
+    border:none;
+
+    color: var(--surface);
+
+    font-size:1.3rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#theme-toggle:hover{
+
+    transform:rotate(20deg) scale(1.15);
+
+}
+
 /* ---------- Body ---------- */
 
 body {
@@ -33,11 +71,15 @@ body {
     color: var(--text);
 }
 
+body.dark .card {
+    border: 1px solid #374151;
+}
+
 /* ---------- Header ---------- */
 
 header {
     background: var(--primary);
-    color: white;
+    color: var(--surface);
 
     display: flex;
     justify-content: space-between;
@@ -61,7 +103,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--surface);
     font-weight: bold;
     transition: .3s;
     padding-bottom: 5px;
@@ -69,7 +111,7 @@ nav a {
 
 nav a:hover {
     color: #dbeafe;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--surface);
 }
 
 /* ---------- Hero ---------- */
@@ -85,7 +127,7 @@ nav a:hover {
         var(--primary-dark)
     );
 
-    color: white;
+    color: var(--surface);
 }
 
 .hero-subtitle {
@@ -217,7 +259,7 @@ section h2 {
 
 .resource-card:hover{
 
-    border-top:4px solid #115e59;
+    border-top:4px solid var(--primary-dark);
 
 }
 
@@ -235,7 +277,7 @@ section h2 {
 
     background: var(--primary);
 
-    color: white;
+    color: var(--surface);
 
     padding: 15px 30px;
 
@@ -257,7 +299,7 @@ footer {
 
     background: var(--footer);
 
-    color: white;
+    color: var(--surface);
 
     text-align: center;
 
@@ -287,7 +329,7 @@ footer {
 
 .modal-content {
 
-    background: white;
+    background: var(--surface);
 
     width: 90%;
 
@@ -321,7 +363,7 @@ footer {
 
 #modal-title{
 
-    color:#0f766e;
+    color: var(--primary);
 
     margin-bottom:15px;
 
@@ -331,7 +373,7 @@ footer {
 
     line-height:1.7;
 
-    color:#6b7280;
+    color: var(--secondary-text);
 
 }
 
@@ -381,18 +423,12 @@ footer {
 
 }
 
-#announcements {
-    background: #ffffff;
+#announcements,
+#resources{
+    background: var(--surface);
 }
 
-#events {
-    background: #f8fafc;
-}
-
-#resources {
-    background: #ffffff;
-}
-
-#contact {
-    background: #f8fafc;
+#events,
+#contact{
+    background: var(--background);
 }
